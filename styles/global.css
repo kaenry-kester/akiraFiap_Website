@@ -34,6 +34,7 @@ body {
 
   --text-Primary_Color: #000000f0;
   --text-Secondary_Color: #ffffff;
+  --text-HoverNavHeader_Color: #b1aeae;
   --text-Hover_Color: #b90e10;
   --text-Active_Color: #e06062;
 }
