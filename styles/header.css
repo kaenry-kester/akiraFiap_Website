@@ -1,0 +1,47 @@
+header {
+  background-color: var(--background-Tertiary_Color);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40rem;
+  padding: 0.2rem 0 0.2rem 0;
+}
+
+img {
+  width: 4rem;
+  cursor: pointer;
+}
+
+li {
+  all: unset;
+  color: var(--text-Secondary_Color);
+  cursor: pointer;
+}
+
+li:hover {
+  color: var(--text-Hover_Color);
+}
+
+li:active {
+  color: var(--text-Active_Color);
+}
+
+.listLinks {
+  display: flex;
+  gap: 3rem;
+}
+
+.arrow {
+  width: 1.5rem;
+}
+
+@media screen and (min-width: 1400px) {
+  header {
+    background-color: var(--background-Tertiary_Color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 60rem;
+    padding: 0.2rem 0 0.2rem 0;
+  }
+}
