@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../assets/fonts/Montserrat-VariableFont_wght.ttf);
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montenegrin";
+  font-style: normal;
+  src: url(../../assets/fonts/MontenegrinGothicOne-Regular.ttf);
+  font-display: swap;
+}
+
 html,
 body,
 #root {
@@ -28,4 +42,27 @@ body,
   display: block;
   pointer-events: none;
   z-index: 999;
+}
+
+.phrase {
+  color: var(--text-Secondary_Color);
+  font-family: "Montenegrin", sans-serif;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.imageSection {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.symbol {
+  object-fit: contain;
+  width: 10rem;
+}
+
+.image {
+  width: 30rem;
 }

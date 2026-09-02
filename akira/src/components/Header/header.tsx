@@ -1,11 +1,12 @@
 import './header.css'
 import { Link } from 'react-router-dom'
+import logo from '../../assets/img/logo.png'
 
 export function Header() {
     return (
         <header className="header">
             <Link to="/">
-                <img src="/public/logo.png" className="logo" />
+                <img src={logo} alt="Akira logo" className="logo" />
             </Link>
 
             <nav className="nav">
