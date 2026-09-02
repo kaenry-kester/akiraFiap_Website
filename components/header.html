@@ -1,12 +1,46 @@
 <header>
     <a href="/" rel="mainPage" class="logo">
-        <img src="../img/logo.png" alt="logo">
+        <img src="../img/logo.png" alt="logo" />
     </a>
     <nav>
         <ul class="listLinks">
-            <li> Home <img src="../img/icon/arrow.png" class="arrow" /></li>
-            <li> Press Release <img src="../img/icon/arrow.png" class="arrow" /></li>
-            <li> Contato <img src="../img/icon/arrow.png" class="arrow" /> </li>
+            <li class="navHeader">
+                <div>
+                    <a href="/"> Home </a>
+                </div>
+            </li>
+            <div class="dropHover">
+                <p>Press release</p>
+                <img id="arrow" src="../img/icon/arrowIcon.png" alt="">
+                <ul class="dropdown_Content">
+                    <li><a href="../pages/pressRelease/sobreOJogo.html" class="dropdownStyle"> Sobre o jogo </a>
+                    </li>
+                    <li><a href="../pages/pressRelease/historia.html" class="dropdownStyle"> História </a></li>
+                    <li><a href="../pages/pressRelease/gameplay.html" class="dropdownStyle"> Gameplay</a></li>
+                </ul>
+            </div>
+
+            <li class="navHeader">
+                <div>
+                    <a href="../pages/contato/contato.html"> Contato </a>
+                </div>
+            </li>
+
+            <div class="blockArea">
+                <p id="downloadLink"> <del>Download</del></p>
+                <ul class="dropdown_Block">
+                    <li>
+                        <p class="dropdownStyle">Em breve</p>
+                    </li>
+                </ul>
+            </div>
+
+            <li class="navHeader">
+                <div>
+                    <a href="../pages/testeSuasHabilidades/game.html"> Teste suas habilidades! </a>
+                </div>
+            </li>
+
         </ul>
     </nav>
 </header>

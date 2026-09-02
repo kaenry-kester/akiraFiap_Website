@@ -1,22 +1,11 @@
-* {
-  box-sizing: border-box;
+html,
+body,
+#root {
   margin: 0;
-  padding: 0;
-}
-
-#c {
-  position: fixed;
-  inset: 0;
-  z-index: 1000;
-  display: block;
   width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  background-color: var(--background-Primary_Color);
+  min-height: 100%;
+  background: var(--background-Primary_Color);
+  font-family: Arial, sans-serif;
 }
 
 :root {
@@ -27,7 +16,16 @@ body {
 
   --text-Primary_Color: #000000f0;
   --text-Secondary_Color: #ffffff;
-  --text-HoverNavHeader_Color: #b1aeae;
   --text-Hover_Color: #b90e10;
   --text-Active_Color: #e06062;
+}
+
+.cursor-trail {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  pointer-events: none;
+  z-index: 999;
 }

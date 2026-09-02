@@ -3,7 +3,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 40rem;
+  gap: 25rem;
   padding: 0.2rem 0 0.2rem 0;
 }
 
@@ -12,27 +12,136 @@ img {
   cursor: pointer;
 }
 
-li {
+a {
+  text-decoration: none;
   all: unset;
   color: var(--text-Secondary_Color);
   cursor: pointer;
+  transition: 0.3s;
+  font-weight: 400;
 }
 
-li:hover {
+a:hover {
   color: var(--text-Hover_Color);
 }
 
-li:active {
+a:active {
+  color: var(--text-Active_Color);
+}
+
+li {
+  font-size: 0.9rem;
+}
+
+nav {
+  padding: 0 1em 0 0;
+}
+
+div > p {
+  color: var(--text-Secondary_Color);
+  cursor: default;
+}
+
+.dropHover {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  width: max-content;
+}
+
+.dropdown_Content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style-type: none;
+  background-color: var(--background-Tertiary_Color);
+  width: 100%;
+  height: 5rem;
+  display: none;
+}
+
+.dropHover:hover > .dropdown_Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dropdownStyle {
+  display: block;
+  font-size: 0.7rem;
+  text-align: center;
+  width: 100%;
+}
+
+.dropdownStyle:hover {
+  color: var(--text-Hover_Color);
+}
+
+.dropdownStyle:active {
   color: var(--text-Active_Color);
 }
 
 .listLinks {
   display: flex;
-  gap: 3rem;
+  gap: 4rem;
+  list-style-type: none;
 }
 
-.arrow {
-  width: 1.5rem;
+#arrow {
+  width: 0.5rem;
+  cursor: default;
+}
+
+#downloadLink {
+  color: var(--text-HoverNavHeader_Color);
+  cursor: default;
+}
+
+#planning {
+  color: var(--text-Secondary_Color);
+  display: none;
+}
+
+#planning:hover {
+  color: var(--text-Secondary_Color);
+  cursor: default;
+}
+
+#planning:active {
+  color: var(--text-Secondary_Color);
+  cursor: default;
+}
+
+.blockArea {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  width: max-content;
+}
+
+.dropdown_Block {
+  position: absolute;
+  top: 100%;
+  left: -8px;
+  list-style-type: none;
+  background-color: var(--background-Tertiary_Color);
+  width: 120%;
+  height: 3rem;
+  display: none;
+}
+
+li > p {
+  color: var(--text-Secondary_Color);
+}
+
+.blockArea:hover > .dropdown_Block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: default;
 }
 
 @media screen and (min-width: 1400px) {
@@ -41,7 +150,11 @@ li:active {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 60rem;
+    gap: 30rem;
     padding: 0.2rem 0 0.2rem 0;
+  }
+
+  li {
+    font-size: 1rem;
   }
 }

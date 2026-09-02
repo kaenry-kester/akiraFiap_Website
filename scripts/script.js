@@ -4,8 +4,10 @@ async function loadComponent(id, file) {
     element.innerHTML = await response.text();
 }
 
-loadComponent("header", "components/header.html");
-loadComponent("footer", "components/footer.html");
+const scriptDirectory = new URL(".", document.currentScript.src);
+
+loadComponent("header", new URL("../components/header.html", scriptDirectory));
+loadComponent("footer", new URL("../components/footer.html", scriptDirectory));
 
 const canvas = document.getElementById("c");
 const context = canvas.getContext("2d");
