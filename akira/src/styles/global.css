@@ -1,0 +1,9 @@
+@import "./header.css";
+@import "./footer.css";
+@import "./CursorTrails.css";
+
+@import "../pages/Home/App.css";
+
+@import "../pages/Minigame/Minigame.css";
+@import "../pages/Contato/Contato.css";
+@import "../pages/SobreOJogo/SobreOJogo.css";
