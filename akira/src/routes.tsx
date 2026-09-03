@@ -4,6 +4,7 @@ import { SobreOJogo } from './pages/SobreOJogo/SobreOJogo.tsx'
 import { Contato } from './pages/Contato/Contato.tsx'
 import { Minigame } from './pages/Minigame/Minigame.tsx'
 import { Historia } from './pages/Historia/Historia.tsx'
+import { Gameplay } from './pages/Gameplay/Gameplay.tsx'
 import { NotFound } from './pages/NotFound/NotFound.tsx'
 
 
@@ -11,10 +12,11 @@ function MainRoutes() {
     return (
         <Routes>
             <Route element={<App />} path="/" />
-            <Route element={<SobreOJogo />} path="./pages/SobreOJogo" />
-            <Route element={<Contato />} path="./pages/Contato" />
-            <Route element={<Minigame />} path="./pages/Minigame" />
-            <Route element={<Historia />} path="./pages/Historia" />
+            <Route element={<SobreOJogo />} path="/sobre-o-jogo" />
+            <Route element={<Contato />} path="/contato" />
+            <Route element={<Minigame />} path="/minigame" />
+            <Route element={<Historia />} path="/historia" />
+            <Route element={<Gameplay />} path="/gameplay" />
             <Route element={<NotFound />} path="*" />
         </Routes>
     )
